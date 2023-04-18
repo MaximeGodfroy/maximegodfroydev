@@ -17,7 +17,7 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                <Route path='/maximegodfroydev' element={<Accueil />} />
+                <Route path='/maximegodfroydev/accueil' element={<Accueil />} />
                 <Route path='/maximegodfroydev/mes-projets' element={<MesProjets />} />
                 <Route path='/maximegodfroydev/mes-projets/:id' element={<MonProjet />} />
                 <Route path='/maximegodfroydev/cv' element={<CV />} />
