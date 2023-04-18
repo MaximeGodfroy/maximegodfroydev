@@ -1,12 +1,12 @@
 import Description from "../../components/Description";
-import Projects from "../../components/Projects";
+import ThreeBestProjects from "../../components/ThreeBestProjects";
 
 export default function Accueil() {
 
     return (
         <main>
             <Description />
-            <Projects />
+            <ThreeBestProjects />
         </main>
     )
 }
