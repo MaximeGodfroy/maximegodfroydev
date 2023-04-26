@@ -4,8 +4,8 @@ footer {
     border-radius: 10px;
     opacity: 0.8;
     color: #FFFFFF;
-    margin: auto;
-    margin: 50px;
+    width: 96%;
+    margin: 20px;
     padding: 10px 0 10px 0;
     text-align: center;
 }

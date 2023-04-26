@@ -1,5 +1,6 @@
 import styles from './Header.module.css'
 import { Link, NavLink } from 'react-router-dom'
+import cv from '../../assets/cv.pdf'
 
 export default function Header() {
 
@@ -15,9 +16,9 @@ export default function Header() {
                 <NavLink to="/maximegodfroydev/mes-projets" className={({ isActive }) => (isActive ? `${styles.link} ${styles.linkActive}` : `${styles.link}`)}>
                     <span>MES PROJETS</span>
                 </NavLink>
-                <NavLink to="/maximegodfroydev/cv" className={({ isActive }) => (isActive ? `${styles.link} ${styles.linkActive}` : `${styles.link}`)}>
+                <a href={cv} className={styles.link}>
                     <span>CV</span>
-                </NavLink>
+                </a>
                 <NavLink to="/maximegodfroydev/contact" className={({ isActive }) => (isActive ? `${styles.link} ${styles.linkActive}` : `${styles.link}`)}>
                     <span>CONTACT</span>
                 </NavLink>
