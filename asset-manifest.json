@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/maximegodfroydev/accueil/static/css/main.71c37a74.css",
-    "main.js": "/maximegodfroydev/accueil/static/js/main.ee0e0aa9.js",
+    "main.js": "/maximegodfroydev/accueil/static/js/main.1bf33fbd.js",
     "static/media/mur-noir.jpg": "/maximegodfroydev/accueil/static/media/mur-noir.a049b41241ff503345f6.jpg",
     "static/media/cv.pdf": "/maximegodfroydev/accueil/static/media/cv.6df28ce04571ebdc2048.pdf",
     "static/media/portrait.webp": "/maximegodfroydev/accueil/static/media/portrait.1e912b8af7cd66981f8a.webp",
     "index.html": "/maximegodfroydev/accueil/index.html",
     "main.71c37a74.css.map": "/maximegodfroydev/accueil/static/css/main.71c37a74.css.map",
-    "main.ee0e0aa9.js.map": "/maximegodfroydev/accueil/static/js/main.ee0e0aa9.js.map"
+    "main.1bf33fbd.js.map": "/maximegodfroydev/accueil/static/js/main.1bf33fbd.js.map"
   },
   "entrypoints": [
     "static/css/main.71c37a74.css",
-    "static/js/main.ee0e0aa9.js"
+    "static/js/main.1bf33fbd.js"
   ]
 }
