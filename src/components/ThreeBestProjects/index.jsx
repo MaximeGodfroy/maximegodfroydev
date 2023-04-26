@@ -1,42 +1,31 @@
 import {Link} from 'react-router-dom';
 import styles from './ThreeBestProjects.module.css'
-import nina from '../../assets/nina.webp'
-import kasa from '../../assets/kasa.webp'
-import node from '../../assets/node1.webp'
+import { useFetch } from '../../utils/hooks';
+import Loader from '../Loader';
+
+
 
 export default function ThreeBestProjects() {
+    const { data, isLoading, error } = useFetch('https://portfolio-132ef-default-rtdb.europe-west1.firebasedatabase.app/0.json');
+    const projectsList = data?.data;
 
-    return (
-        <div className={styles.cardContainer}>
-            <div className={styles.firstLine}>
-                <Link to={`/mes-projets/id1`} className={styles.link}>
+    if(error) {
+        return <span>Il y a un problème</span>
+    }
+
+    return (<div className={styles.cardContainer}>
+    {isLoading ? (
+            <Loader />) : (projectsList.sort((p1, p2) => (p1.id < p2.id) ? 1 : (p1.id > p2.id) ? -1 : 0).slice(0,3).map((project, index) => 
+            <Link to={`/maximegodfroydev/mes-projets/${project.id}`} className={styles.link} key={`mes3projets-${index}-${project.id}`}>
                 <div className={styles.card}>
-                    <img src={node} alt='projet backend' /> 
+                    <img src={project.cover} alt={project.alt} />
                     <div className={styles.titles}>
-                        <h2>Mon Vieux Grimoire</h2>
-                        <h3>Développement du back-end d'un site de notation de livres avec Node.js, Express et MongoDB</h3>
+                        <h2>{project.title}</h2>
+                        <h3>{project.description}</h3>
                     </div>
                 </div>
-            </Link>
-            <Link to={`/mes-projets/id1`} className={styles.link}>
-                <div className={styles.card}>
-                    <img src={kasa} alt='projet kasa' /> 
-                    <div className={styles.titles}>
-                        <h2>Kasa</h2>
-                        <h3>Création d'une appli web de location immobilière avec React</h3>
-                    </div>
-                </div>
-            </Link>
-            </div>
-            <Link to={`/mes-projets/id1`} className={styles.link}>
-                <div className={styles.card}>
-                    <img src={nina} alt='projet photographe' /> 
-                    <div className={styles.titles}>
-                        <h2>Nina Carducci</h2>
-                        <h3>Débuggage et optimisation d'un site de photographe</h3>
-                    </div>
-                </div>
-            </Link>
-        </div>
+                </Link>
+            ))}
+    </div>
     )
 }

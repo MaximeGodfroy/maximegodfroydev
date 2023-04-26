@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Container = styled.section`
-    margin-top: 150px;
+    margin-top: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +16,7 @@ const Title = styled.h2`
     width: 200px;
     padding: 10px;
     font-size: 28px;
+    margin: 0 0 20px 0;
 `
 
 const Presentation = styled.p`

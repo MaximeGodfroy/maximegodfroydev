@@ -5,9 +5,8 @@ import Header from './components/Header';
 import Accueil from './pages/Accueil';
 import MesProjets from './pages/MesProjets';
 import MonProjet from './pages/MonProjet';
-import CV from './pages/CV';
 import Contact from './pages/Contact';
-import Erreur from './pages/Erreur';
+import Error404 from './pages/Error404';
 import Footer from './components/Footer';
 
 
@@ -17,12 +16,11 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                <Route path='/maximegodfroydev/accueil' element={<Accueil />} />
+                <Route path='/maximegodfroydev.com' element={<Accueil />} />
                 <Route path='/maximegodfroydev/mes-projets' element={<MesProjets />} />
-                <Route path='/maximegodfroydev/mes-projets/:id' element={<MonProjet />} />
-                <Route path='/maximegodfroydev/cv' element={<CV />} />
+                <Route path='/maximegodfroydev/mes-projets/:id' element={<MonProjet />} errorElement={<Error404 />} />
                 <Route path='/maximegodfroydev/contact' element={<Contact />} />
-                <Route path='/*' element={<Erreur />} />
+                <Route path='/*' element={<Error404 />} />
             </Routes>
             <Footer />   
         </Router>

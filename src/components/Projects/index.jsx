@@ -1,74 +1,33 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './Projects.module.css'
-import booki from '../../assets/booki.webp'
-import sophie from '../../assets/sophie2.webp'
-import notion from '../../assets/notion2.webp'
-import nina from '../../assets/nina.webp'
-import kasa from '../../assets/kasa.webp'
-import node from '../../assets/node1.webp'
 import ProjectsContainer from '../ProjectsContainer';
+import { useFetch } from '../../utils/hooks';
+import Loader from '../Loader';
 
 export default function Projects() {
+    const { data, isLoading, error } = useFetch('https://portfolio-132ef-default-rtdb.europe-west1.firebasedatabase.app/0.json');
+    const projectsList = data?.data;
+
+    if(error) {
+        return <span>Il y a un problème</span>
+    }
 
     return (
         <ProjectsContainer>
-          <div className={styles.cardContainer}>
-            <Link to={`/mes-projets/id1`} className={styles.link}>
+            {isLoading ? <Loader /> :
+            (<div className={styles.cardContainer}>
+            {projectsList.sort((p1, p2) => (p1.id < p2.id) ? 1 : (p1.id > p2.id) ? -1 : 0).map((project, index) => 
+            <Link to={`/maximegodfroydev/mes-projets/${project.id}`} className={styles.link} key={`mesprojets-${index}-${project.id}`}>
                 <div className={styles.card}>
-                    <img src={node} alt='projet backend' /> 
+                    <img src={project.cover} alt={project.alt} />
                     <div className={styles.titles}>
-                        <h2>Mon Vieux Grimoire</h2>
-                        <h3>Développement du back-end d'un site de notation de livres avec Node.js, Express et MongoDB</h3>
+                        <h2>{project.title}</h2>
+                        <h3>{project.description}</h3>
                     </div>
                 </div>
-            </Link>
-            <Link to={`/mes-projets/id1`} className={styles.link}>
-                <div className={styles.card}>
-                    <img src={kasa} alt='projet kasa' /> 
-                    <div className={styles.titles}>
-                        <h2>Kasa</h2>
-                        <h3>Création d'une appli web de location immobilière avec React</h3>
-                    </div>
-                </div>
-            </Link>
-            <Link to={`/mes-projets/id1`} className={styles.link}>
-                <div className={styles.card}>
-                    <img src={nina} alt='projet photographe' /> 
-                    <div className={styles.titles}>
-                        <h2>Nina Carducci</h2>
-                        <h3>Débuggage et optimisation d'un site de photographe</h3>
-                    </div>
-                </div>
-            </Link>
-            <Link to={`/mes-projets/id2`} className={styles.link}>
-                <div className={styles.card}>
-                    <img src={notion} alt='projet MenuMaker' /> 
-                    <div className={styles.titles}>
-                        <h2>Gestion de projet agile</h2>
-                        <h3>Planification d'un projet de création de menu pour des restaurateurs</h3>
-                    </div>
-                </div>
-            </Link>
-            <Link to={`/mes-projets/id3`} className={styles.link}>
-                <div className={styles.card}>
-                    <img src={sophie} alt='projet JavaScript' /> 
-                    <div className={styles.titles}>
-                        <h2>Architecte d'intérieur Sophie Bluel</h2>
-                        <h3>Dynamisation d'un site et requêtes API avec JavaScript</h3>
-                    </div>
-                </div>
-            </Link>
-            <Link to={`/mes-projets/id4`} className={styles.link}>
-                <div className={styles.card}>
-                    <img src={booki} alt='projet booki' /> 
-                    <div className={styles.titles}>
-                        <h2>Agence de voyages Booki</h2>
-                        <h3>Intégration à partir d'une maquette d'un site responsive en HTML et CSS</h3>
-                    </div>
-                </div>
-            </Link>
-        </div>  
+            </Link>)
+          }
+        </div>)}
         </ProjectsContainer>
-        
     )
 }

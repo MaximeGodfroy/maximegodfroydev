@@ -7,7 +7,7 @@
     justify-items: center;
     padding: 50px;
     border-radius: 25px;
-    margin: 0 0 50px 0;
+    margin: auto;
     width: 90%;
 }
 
@@ -22,7 +22,7 @@
     box-shadow: 0 0 15px white;
     background-color: rgba(28, 28, 26, 0.8);
     padding: 20px;
-    min-width: 500px;
+    min-width: 400px;
     max-width: 750px;
     height: 500px;
     display: flex;
@@ -54,6 +54,10 @@
     color: #FFFFFF;
     z-index: 1;
     text-align: center;
+}
+
+.titles h2, .titles h3 {
+    width: 90%;
 }
 
 .titles:hover {

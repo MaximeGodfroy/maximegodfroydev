@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import portrait from '../../assets/portrait5.webp'
+import portrait from '../../assets/portrait.webp'
 
 const Presentation = styled.section`
     display: flex;
@@ -7,7 +7,7 @@ const Presentation = styled.section`
     align-items: center;
     background-color: rgba(28, 28, 26, 0.8);
     margin: auto;
-    margin-top: 150px;
+    margin-top: 130px;
     box-shadow: 0 0 30px;
     border-radius: 10px;
     color: #FFFFFF;
