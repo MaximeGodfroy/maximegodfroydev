@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b03522ca.css",
+    "main.js": "/static/js/main.81f9ee0f.js",
+    "static/media/mur-noir.jpg": "/static/media/mur-noir.a049b41241ff503345f6.jpg",
+    "static/media/cv.pdf": "/static/media/cv.6df28ce04571ebdc2048.pdf",
+    "static/media/portrait.webp": "/static/media/portrait.1e912b8af7cd66981f8a.webp",
+    "index.html": "/index.html",
+    "main.b03522ca.css.map": "/static/css/main.b03522ca.css.map",
+    "main.81f9ee0f.js.map": "/static/js/main.81f9ee0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b03522ca.css",
+    "static/js/main.81f9ee0f.js"
+  ]
+}
