@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/maximegodfroydev-accueil/static/css/main.c486bd8e.css",
-    "main.js": "/maximegodfroydev-accueil/static/js/main.cfc71131.js",
+    "main.css": "/maximegodfroydev-accueil/static/css/main.97141b2d.css",
+    "main.js": "/maximegodfroydev-accueil/static/js/main.86342e2d.js",
     "static/media/mur-noir.jpg": "/maximegodfroydev-accueil/static/media/mur-noir.a049b41241ff503345f6.jpg",
     "static/media/cv.pdf": "/maximegodfroydev-accueil/static/media/cv.6df28ce04571ebdc2048.pdf",
     "static/media/portrait.webp": "/maximegodfroydev-accueil/static/media/portrait.1e912b8af7cd66981f8a.webp",
     "static/media/javascript.webp": "/maximegodfroydev-accueil/static/media/javascript.58234eed638862258da9.webp",
     "static/media/node-logo.png": "/maximegodfroydev-accueil/static/media/node-logo.33f66c0643c9b607a0c2.png",
     "index.html": "/maximegodfroydev-accueil/index.html",
-    "main.c486bd8e.css.map": "/maximegodfroydev-accueil/static/css/main.c486bd8e.css.map",
-    "main.cfc71131.js.map": "/maximegodfroydev-accueil/static/js/main.cfc71131.js.map"
+    "main.97141b2d.css.map": "/maximegodfroydev-accueil/static/css/main.97141b2d.css.map",
+    "main.86342e2d.js.map": "/maximegodfroydev-accueil/static/js/main.86342e2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c486bd8e.css",
-    "static/js/main.cfc71131.js"
+    "static/css/main.97141b2d.css",
+    "static/js/main.86342e2d.js"
   ]
 }
