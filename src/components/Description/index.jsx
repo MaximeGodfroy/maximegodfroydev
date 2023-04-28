@@ -6,13 +6,18 @@ const Presentation = styled.section`
     justify-content: space-between;
     align-items: center;
     background-color: rgba(28, 28, 26, 0.8);
-    margin: auto;
-    margin-top: 130px;
+    margin: 140px auto 30px auto;
     box-shadow: 0 0 30px;
     border-radius: 10px;
     color: #FFFFFF;
     width: 70%;
     padding: 20px 20px;
+    @media all and (max-width: 750px) {
+        img {
+            width: 100px;
+        }
+        flex-direction: column;
+    }
 `;
 
 const Texts = styled.div`
@@ -22,16 +27,23 @@ const Texts = styled.div`
 `
 
 
-const Bonjour = styled.p`
+const Bonjour = styled.h2`
     text-align: center;
     font-size: 28px;
     font-weight: 500;
+    @media all and (max-width: 750px) {
+        font-size: 20px;
+    }
 `
 
 const DescriptionText = styled.p`
     margin-left: 20px;
     font-size: 20px;
     text-align: justify;
+    @media all and (max-width: 750px) {
+        font-size: 16px;
+        margin-left: 0;
+    }
 `
 
 export default function Description() {
@@ -43,7 +55,7 @@ export default function Description() {
                 <Bonjour>Qui suis-je ?</Bonjour>
                 <DescriptionText>Après avoir travaillé dans la recherche et développement en chimie pendant 13 ans, j’ai décidé de me reconvertir dans 
                 un nouveau domaine qui satisfait ma créativité et mon envie de me former tous les jours : le développement informatique.<br />
-                Parcourez l'ensemble des projets que j'ai réalisés pendant ma formation OpenClassRooms ainsi que mes premiers projets personnels. </DescriptionText>  
+                Parcourez l'ensemble des projets que j'ai réalisés pendant ma formation OpenClassRooms. </DescriptionText>  
             </Texts>
         </Presentation>
     )

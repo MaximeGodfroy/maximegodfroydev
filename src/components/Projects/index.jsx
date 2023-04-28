@@ -13,6 +13,7 @@ export default function Projects() {
     }
 
     return (
+    <main>
         <ProjectsContainer>
             {isLoading ? <Loader /> :
             (<div className={styles.cardContainer}>
@@ -29,5 +30,6 @@ export default function Projects() {
           }
         </div>)}
         </ProjectsContainer>
+    </main>
     )
 }

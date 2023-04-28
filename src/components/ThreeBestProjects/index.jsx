@@ -1,9 +1,7 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './ThreeBestProjects.module.css'
 import { useFetch } from '../../utils/hooks';
 import Loader from '../Loader';
-
-
 
 export default function ThreeBestProjects() {
     const { data, isLoading, error } = useFetch('https://portfolio-132ef-default-rtdb.europe-west1.firebasedatabase.app/0.json');
@@ -13,7 +11,8 @@ export default function ThreeBestProjects() {
         return <span>Il y a un problème</span>
     }
 
-    return (<div className={styles.cardContainer}>
+    return (<section><h2 className={styles.h2}>Une sélection de mes projets :</h2>
+    <div className={styles.cardContainer}>   
     {isLoading ? (
             <Loader />) : (projectsList.sort((p1, p2) => (p1.id < p2.id) ? 1 : (p1.id > p2.id) ? -1 : 0).slice(0,3).map((project, index) => 
             <Link to={`/maximegodfroydev/mes-projets/${project.id}`} className={styles.link} key={`mes3projets-${index}-${project.id}`}>
@@ -26,6 +25,7 @@ export default function ThreeBestProjects() {
                 </div>
                 </Link>
             ))}
-    </div>
+    </div><h2 className={styles.h2}><Link to='/maximegodfroydev/mes-projets'>Tous mes projets ici</Link></h2>
+    </section>
     )
 }

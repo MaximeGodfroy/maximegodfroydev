@@ -14,13 +14,18 @@
     border-radius: 10px;
     color: #FFFFFF;
     margin: auto;
-    width: 96%;
+    max-width: 96%;
     margin: 130px 20px 0 20px;
     padding: 10px 0 10px 0;
 }
 
+.projectContainer h2+p {
+    width: 90%;
+}
+
 .title1 {
     margin: 20px 0 30px 0;
+    width: 90%;
 }
 
 .languages {
@@ -32,10 +37,19 @@
     height: 50px;
     margin: 10px;
     background-color: rgba(28, 28, 26);
-    border: 3px solid white;
     padding: 2px;
 }
 
 .links a{
     margin: 10px;
+}
+
+@media all and (max-width: 600px) {
+    .title1, .h2 {
+        font-size: 20px;
+    }
+    
+    .h3 {
+        font-size: 16px;
+    }
 }

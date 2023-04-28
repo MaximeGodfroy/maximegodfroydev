@@ -1,5 +1,6 @@
 import Description from "../../components/Description";
 import ThreeBestProjects from "../../components/ThreeBestProjects";
+import Skills from "../../components/Skills";
 
 export default function Accueil() {
 
@@ -7,6 +8,7 @@ export default function Accueil() {
         <main>
             <Description />
             <ThreeBestProjects />
+            <Skills />
         </main>
     )
 }

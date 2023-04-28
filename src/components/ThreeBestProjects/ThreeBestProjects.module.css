@@ -1,43 +1,46 @@
 .cardContainer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     justify-items: center;
-    padding: 50px;
     border-radius: 25px;
-    margin: auto;
-    width: 90%;
+    margin: 0 auto 10px auto;
+    width: 95%;
 }
 
-.firstLine {
-    display: flex;
+.h2 {
+    background-color: rgba(28, 28, 26, 0.8);
+    color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 15px;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 auto 10px auto;
 }
 
-.link, .link3{
+.link {
     text-decoration: none;
     border-radius: 10px;
+    margin: 20px;
+    flex: 1;
 }
 
 .card{
     position: relative;
-    margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px white;
     background-color: rgba(28, 28, 26, 0.8);
     padding: 20px;
-    min-width: 500px;
-    max-width: 750px;
-    height: 500px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.link3 {
-    width: 50%;
-}
-
-.link img, .link3 img{
+.link img {
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
@@ -70,4 +73,45 @@
 .titles:hover {
     background-color: rgba(28, 28, 26, 0.8);
     opacity: 1;
+}
+
+@media all and (min-width: 1001px) and (max-width: 1400px) {
+    .cardContainer {
+        flex-wrap: wrap;
+    }
+
+    .link {
+        flex: none;
+        max-width: 40%;
+    }
+
+}
+
+@media all and (max-width: 1000px) {
+    .cardContainer {
+        flex-wrap: wrap;
+    }
+
+    .link {
+        flex: none;
+        width: 60%;
+    }
+
+    .card {
+        height: 33%;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .link {
+        flex: none;
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .h2 {
+        max-width: 90%;
+    }
 }
