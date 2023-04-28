@@ -47,7 +47,7 @@
 
 .numberPictures {
     position: absolute;
-    color: #016fb4;
+    color: #000000;
     font-size: 18px;
     font-weight: 600;
     top: -3%;
@@ -55,12 +55,30 @@
     opacity: 0.5;
 }
 
-@media all and (max-width: 375px) {
+@media all and (min-width: 451px) and (max-width: 750px) {
     .pictures {
         height: 255px;
     }
 
     .elementsCarousel {
         height: 255px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .pictures {
+        height: 170px;
+    }
+
+    .elementsCarousel {
+        height: 170px;
+    }
+
+    .arrow1, .arrow2 {
+        height: 40px;
+    }
+
+    .numberPictures {
+        font-size: 14px;
     }
 }

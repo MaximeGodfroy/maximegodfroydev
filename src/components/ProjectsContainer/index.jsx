@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Container = styled.section`
-    margin-top: 130px;
+    margin: 130px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,8 +15,8 @@ const Title = styled.h2`
     text-align: center;
     width: 200px;
     padding: 10px;
-    font-size: 28px;
-    margin: 0 0 20px 0;
+    font-size: 20px;
+    margin: 0 0 10px 0;
 `
 
 const Presentation = styled.p`
@@ -26,7 +26,11 @@ const Presentation = styled.p`
     text-align: center;
     width: 50%;
     padding: 20px;
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    @media all and (max-width: 450px) {
+        font-size: 12px;
+    }
 `
 
 export default function ProjectsContainer({children}) {

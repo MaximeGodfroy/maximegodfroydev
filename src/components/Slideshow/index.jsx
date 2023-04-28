@@ -1,6 +1,6 @@
 import styles from './Slideshow.module.css'
-import leftVector from '../../assets/leftVector3.png'
-import rightVector from '../../assets/rightVector3.png'
+import leftVector from '../../assets/leftVector4.png'
+import rightVector from '../../assets/rightVector4.png'
 import { useState } from 'react'
 
 export default function Slideshow({ alt, pictures }) {

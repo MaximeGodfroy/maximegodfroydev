@@ -28,10 +28,6 @@ header {
     font-weight: 400;
 }
 
-.title p {
-    margin: 5px 0 10px 0;
-}
-
 .title:hover {
     text-decoration: underline;
 }
@@ -58,4 +54,42 @@ header {
 
 .link:hover {
     text-decoration: underline;
+}
+
+@media all and (max-width: 750px) {
+    header, .link, .title {
+        margin-left: 10px;
+    }
+
+    .nav {
+        margin-right: 10px;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 600px) {
+    .title h1, .link {
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width: 451px) and (max-width: 500px) {
+    .title h1, .link {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    header {
+        flex-direction: column;
+    }
+
+    .link {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .title h1 {
+        margin-top: 0;
+        font-size: 18px;
+    }
 }

@@ -16,7 +16,7 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                <Route path='/maximegodfroydev.com' element={<Accueil />} />
+                <Route path='/maximegodfroydev-accueil' element={<Accueil />} />
                 <Route path='/maximegodfroydev/mes-projets' element={<MesProjets />} />
                 <Route path='/maximegodfroydev/mes-projets/:id' element={<MonProjet />} errorElement={<Error404 />} />
                 <Route path='/maximegodfroydev/contact' element={<Contact />} />
