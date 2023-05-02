@@ -48,7 +48,7 @@ export default function Contact() {
             <div><img src={portrait} alt='portrait' /></div>
             <p>Pour toute nouvelle opportunité, n'hésitez pas à me contacter par mail ou sur LinkedIn :</p>
             <div>
-                <a href='mailto:maximegodfroydev@gmail.com'><i class="fa-regular fa-envelope fa-3x"></i></a>
+                <a href='mailto:maximegodfroy.dev@gmail.com'><i class="fa-regular fa-envelope fa-3x"></i></a>
                 <a href='https://www.linkedin.com/in/maximegodfroy/'><img src={linkedin} alt='logo linkedin'/></a>
             </div>
         </Text>

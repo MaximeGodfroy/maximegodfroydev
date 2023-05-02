@@ -12,6 +12,7 @@
 .footer div {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 10px;
 }
 
@@ -23,7 +24,7 @@
     margin-left: 35px;
 }
 
-.footer a:nth-child(1) {
+.footer img[alt="logo github"] {
     background-color: #000000;
 }
 

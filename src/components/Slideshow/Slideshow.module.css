@@ -81,4 +81,12 @@
     .numberPictures {
         font-size: 14px;
     }
+
+    .arrow1, .arrow2 {
+        height: 30px;
+    }
+
+    .arrow1:hover, .arrow2:hover {
+        height: 40px;
+    }
 }
