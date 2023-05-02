@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/maximegodfroydev-accueil/static/css/main.eeb4be8a.css",
+    "main.css": "/maximegodfroydev-accueil/static/css/main.70aa1b95.css",
     "main.js": "/maximegodfroydev-accueil/static/js/main.b2883834.js",
     "static/media/mur-noir.jpg": "/maximegodfroydev-accueil/static/media/mur-noir.a049b41241ff503345f6.jpg",
     "static/media/cv.pdf": "/maximegodfroydev-accueil/static/media/cv.6df28ce04571ebdc2048.pdf",
@@ -8,11 +8,11 @@
     "static/media/javascript.webp": "/maximegodfroydev-accueil/static/media/javascript.58234eed638862258da9.webp",
     "static/media/node-logo.png": "/maximegodfroydev-accueil/static/media/node-logo.33f66c0643c9b607a0c2.png",
     "index.html": "/maximegodfroydev-accueil/index.html",
-    "main.eeb4be8a.css.map": "/maximegodfroydev-accueil/static/css/main.eeb4be8a.css.map",
+    "main.70aa1b95.css.map": "/maximegodfroydev-accueil/static/css/main.70aa1b95.css.map",
     "main.b2883834.js.map": "/maximegodfroydev-accueil/static/js/main.b2883834.js.map"
   },
   "entrypoints": [
-    "static/css/main.eeb4be8a.css",
+    "static/css/main.70aa1b95.css",
     "static/js/main.b2883834.js"
   ]
 }
