@@ -2,10 +2,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1C1A1A;
+    background-color: rgba(28, 28, 26, 0.8);
     box-shadow: 0 0 15px;
     border-radius: 10px;
-    opacity: 0.8;
     color: #FFFFFF;
     margin: 20px;
     padding: 10px 0 10px 0;
