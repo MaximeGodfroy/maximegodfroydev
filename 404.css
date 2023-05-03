@@ -1,3 +1,21 @@
+html {
+  position: relative;
+  background: url('./static/media/mur-noir.a049b41241ff503345f6.jpg') fixed no-repeat;
+  background-size: cover;
+  margin: auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .error {
     text-align: center;
     margin: 150px 100px 50px 100px;
